@@ -18,5 +18,3 @@ clean-targets:
 models:
   sub_calculations:
       materialized: table
-      staging:
-        materialized: view
