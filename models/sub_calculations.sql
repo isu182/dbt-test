@@ -1,9 +1,9 @@
 with dbt_test as (
 
     select
-        client_user_id as client_id
-        calculation_type as type
-        created_at as date
+        client_user_id as c_id
+        calculation_type as c_type
+        created_at as c_date
 
     from {{ source('money_check', 'sub_calculations') }}
 
@@ -13,9 +13,9 @@ with dbt_test as (
 final as (
 
     select
-        dbt_test.client_id,
-        dbt_test.type,
-        dbt_test.date
+        dbt_test.c_id,
+        dbt_test.c_type,
+        dbt_test.c_date
 
     from dbt_test
 )
