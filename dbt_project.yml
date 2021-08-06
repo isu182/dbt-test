@@ -16,5 +16,5 @@ clean-targets:
     - "logs"
 
 models:
-  sub_calc_extracted:
+  sub_calculations:
       materialized: table
