@@ -1,0 +1,6 @@
+version: 2
+
+sources:
+  - name: money_check
+    tables:
+      - name: sub_calculations
